@@ -126,7 +126,7 @@ namespace _9310_questions
 
         static Queue<char> Pairs(Queue<char> q)
         {
-
+            return null;
         }
 
 
