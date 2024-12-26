@@ -39,13 +39,17 @@ namespace _9310_questions
             q = Arr2Q(new int[] { 20, 5, 2, 3 });
             Console.WriteLine(ProductsQ(q));
 
+            //6
+            Queue<char> q1 = Arr2Q(new char[] { 'f', 'e', 'e', 'e', 'e', 'd', 'c', 'c', 'b', 'b', 'b' });
+            Console.WriteLine(Pairs(q1));
+            Console.WriteLine(q1);
 
         }
 
-        static Queue<int> Arr2Q(int[] arr)
+        static Queue<T> Arr2Q<T>(T[] arr)
         {
-            Queue<int> q = new Queue<int>();
-            foreach (int value in arr)
+            Queue<T> q = new Queue<T>();
+            foreach (T value in arr)
                 q.Insert(value);
             return q;
         }
@@ -122,6 +126,7 @@ namespace _9310_questions
         //output: new queue of chars. only chars from q which are equal to the following char are copied
         //example: queuehead = ['f','e','e','e','e','d','c','c','b','b','b'], return: queuehead['e','e','e','c','b','b','b']
         //note: last char in q has no following char, so not copied to new queue
+        //need to restore queue
         //what is the complexity?
 
         static Queue<char> Pairs(Queue<char> q)
