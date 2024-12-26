@@ -117,6 +117,18 @@ namespace _9310_questions
             return false;
         }
 
+        //6
+        //input: queue of chars (q)
+        //output: new queue of chars. only chars from q which are equal to the following char are copied
+        //example: queuehead = ['f','e','e','e','e','d','c','c','b','b','b'], return: queuehead['e','e','e','c','b','b','b']
+        //note: last char in q has no following char, so not copied to new queue
+        //what is the complexity?
+
+        static Queue<char> Pairs(Queue<char> q)
+        {
+
+        }
+
 
     }
 }
