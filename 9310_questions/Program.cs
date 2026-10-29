@@ -38,6 +38,10 @@ namespace _9310_questions
             Console.WriteLine(ProductsQ(q));
             q = Arr2Q(new int[] { 20, 5, 2, 3 });
             Console.WriteLine(ProductsQ(q));
+            q = Arr2Q(new int[] { 20, 5, 2 });
+            Console.WriteLine(ProductsQ(q));
+            q = Arr2Q(new int[] { 20, 5, 2,2 });
+            Console.WriteLine(ProductsQ(q));
 
             //6
             Queue<char> q1 = Arr2Q(new char[] { 'f', 'e', 'e', 'e', 'e', 'd', 'c', 'c', 'b', 'b', 'b' });
@@ -112,6 +116,8 @@ namespace _9310_questions
         //example: queuehead = [20,5,2,1,2,36,6,3,2,17,1,17], return: true
         //example: queuehead = [20,5,2,3,17,1,17], return: false
         //example: queuehead = [20,5,2,3], return: false
+        //example: queuehead = [20, 5, 2] - return false
+        //example: queuehead = [20, 5, 2, 2] - return true
         //notes: no need to restore original q
         //שימו לב, מכפלה באנגלית זה product
         //what is the complexity?
